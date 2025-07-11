@@ -1,8 +1,9 @@
-// src/main/java/com/DevOpsgn/DiscountService.java
+// src/main/java/com/devopsgang/DiscountService.java
 package com.DevOpsgn;
 
-/** Contrato para obtener la tasa de descuento de un código. */
-public interface DiscountService {
-    /** Devuelve la tasa de descuento [0.0–1.0] asociada al código. */
-    double getRate(String code);
+public class DiscountService {
+    public double getRate(String code) {
+        if ("SALES10".equals(code)) return 0.10;
+        return 0.0;
+    }
 }

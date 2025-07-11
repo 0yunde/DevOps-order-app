@@ -1,4 +1,74 @@
 -------------------------------------------------------------------------------
 Test set: com.DevOpsgn.OrderServiceTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.010 s -- in com.DevOpsgn.OrderServiceTest
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.027 s <<< FAILURE! -- in com.DevOpsgn.OrderServiceTest
+com.DevOpsgn.OrderServiceTest.testWithDiscountAndExpressShipment -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	Cycle detected: the type DiscountService cannot extend/implement itself or one of its own member types
+	The method getRate(String) of type DiscountService must override or implement a supertype method
+
+	at com.DevOpsgn.DiscountService.<init>(DiscountService.java:4)
+	at com.DevOpsgn.OrderServiceTest.<init>(OrderServiceTest.java:9)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.DevOpsgn.OrderServiceTest.testNegativeSubtotal -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	Cycle detected: the type DiscountService cannot extend/implement itself or one of its own member types
+	The method getRate(String) of type DiscountService must override or implement a supertype method
+
+	at com.DevOpsgn.DiscountService.<init>(DiscountService.java:4)
+	at com.DevOpsgn.OrderServiceTest.<init>(OrderServiceTest.java:9)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.DevOpsgn.OrderServiceTest.testWithoutDiscountAndExpressShipment -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	Cycle detected: the type DiscountService cannot extend/implement itself or one of its own member types
+	The method getRate(String) of type DiscountService must override or implement a supertype method
+
+	at com.DevOpsgn.DiscountService.<init>(DiscountService.java:4)
+	at com.DevOpsgn.OrderServiceTest.<init>(OrderServiceTest.java:9)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.DevOpsgn.OrderServiceTest.testWithDiscountAndNormalShipment -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	Cycle detected: the type DiscountService cannot extend/implement itself or one of its own member types
+	The method getRate(String) of type DiscountService must override or implement a supertype method
+
+	at com.DevOpsgn.DiscountService.<init>(DiscountService.java:4)
+	at com.DevOpsgn.OrderServiceTest.<init>(OrderServiceTest.java:9)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.DevOpsgn.OrderServiceTest.testWithoutDiscountAndNormalShipment -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	Cycle detected: the type DiscountService cannot extend/implement itself or one of its own member types
+	The method getRate(String) of type DiscountService must override or implement a supertype method
+
+	at com.DevOpsgn.DiscountService.<init>(DiscountService.java:4)
+	at com.DevOpsgn.OrderServiceTest.<init>(OrderServiceTest.java:9)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
